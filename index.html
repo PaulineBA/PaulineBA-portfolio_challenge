@@ -1,5 +1,6 @@
 <!-- index.html -->
-
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,12 +11,17 @@
       http-equiv="Content-Security-Policy"
       content="default-src *; connect-src * ws://* wss://*; style-src * 'unsafe-inline' 'unsafe-eval'; media-src * ; img-src * data:; font-src * ; script-src * 'unsafe-inline' 'unsafe-eval';"
     />
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      rel="stylesheet" href="dist/style.css" 
+      />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <title>Portfolio</title>
   </head>
-  <link rel="stylesheet" href="dist/style.css" />
+
   <body>
-   
     <div id="app"></div>
     <noscript>
       You need to enable JavaScript to run this React application.
