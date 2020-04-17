@@ -10,6 +10,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "react-undraw-illustrations": "^2.0.3",
     "style-loader": "0.23.0",
     "webpack": "4.19.1",
     "webpack-cli": "3.1.1"
