@@ -37,11 +37,11 @@ describe('User can navigate the app', () => {
     cy.get('#CV').should('not.exist')
 
     it('to my CV tab',() => {
-      cy.get('#cv').click();
+      cy.get('#CV').click();
       cy.get('#header').click()
       cy.get('#hello').click();
   
-      cy.get('#cv').should('contain', 'cv');
+      cy.get('#CV').should('contain', 'CV');
   
       cy.get('#projects-header').should('not.exist');
       cy.get('#about-header').should('not.exist');

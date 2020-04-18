@@ -4,6 +4,9 @@ import JobCard from "./JobCard";
 
 
 class CV extends Component {
+  state = {
+    CVdata: []
+  };
   componentDidMount() {
     axios.get('./src/data/cv.json')
       .then(response => {
@@ -12,12 +15,9 @@ class CV extends Component {
         })
       })
   }
-  state = {
-    CVdata: []
-  };
   
 render() {
-  const cv = this.state.cv;
+  const cv = this.state.CVdata;
   let jobList;
 
 
