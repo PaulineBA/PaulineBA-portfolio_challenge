@@ -2,19 +2,20 @@ describe('User can navigate the app', () => {
     beforeEach(() => {
       cy.visit('http://localhost:3000');
     })
+    
+    it('to About tab',() => {
+      cy.get('#about-tab').click();
   
-    describe('to About tab and it', () => {
-      beforeEach(() => {
-        cy.get('#about-tab').click();
-      });
+      cy.get('#about-header').should('contain', 'About Me');
   
-      it('displays About Me header', () => {
-        cy.get('#about-header').should('contain', 'About Me');
-      });
-  
+      cy.get('#projects-header').should('not.exist');
+      cy.get('#hello').should('not.exist');
+    })
+
       it('displays component name in url', () => {
         cy.url().should("contain", "about");
       })
+
   
       it('does not display My Projects header ', () => {
         cy.get('#projects-header').should('not.exist');
@@ -23,7 +24,7 @@ describe('User can navigate the app', () => {
       it('does not display Hello world', () => {
         cy.get('#hello').should('not.exist');
       });
-    });
+      });
   
     describe('to My Projects tab and it',() => {
       beforeEach(() => {
