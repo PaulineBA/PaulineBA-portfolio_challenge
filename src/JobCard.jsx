@@ -1,19 +1,20 @@
 import React from "react";
+import CV from "./cv";
 
 const JobCard = ({ cv }) =>{
     return (
         <>
          <div class="ui card">
          <div class="image">
-         <img src={cv.image} />
+         <img src={CV.image} />
          </div>
          <div class="content">
-         <h3 class="ui header">{JobCard.name}</h3>
+         <h3 class="ui header">{cv.name}</h3>
          <div class="description">{cv.description}</div>
-         < a href={cv.link}>
-         </a>
+         <div className="link"><a href={jobs.link}>schoolWebsite</a>
          </div>
          </div>
+       </div>
        </>
      );
    };
