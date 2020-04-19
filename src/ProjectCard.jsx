@@ -11,6 +11,8 @@ const ProjectCard = ({ project }) => {
           <h3 className="ui header">{project.name}</h3>
 
           <div className="description">{project.description}</div>
+          <div className="link"><a href={jobs.link}></a>
+          </div>
         </div>
       </div>
     </>

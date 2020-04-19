@@ -3,6 +3,8 @@
       "id": 1,
       "name": "French teacher at Franska skolan, Gothenburg",
       "image": "https://resources.mynewsdesk.com/image/upload/t_next_gen_logo_limit_x2/sw140xs5zbtc7zwozyhf.jpg",
-      "description": "Class mentor for students grade 4 and 5."
+      "description": "Class mentor for students grade 4 and 5.",
+      "link": "http://www.franskaskolangoteborg.se/"
+      
     }
 ]
