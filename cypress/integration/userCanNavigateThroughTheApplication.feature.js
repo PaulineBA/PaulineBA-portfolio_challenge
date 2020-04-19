@@ -4,7 +4,7 @@ describe('User can navigate the app', () => {
   })
 
 
-  it('to About tab',() => {
+  it('to About tab', () => {
     cy.get('#about-tab').click();
 
     cy.get('#about-header').should('contain', 'About Me');
@@ -14,7 +14,7 @@ describe('User can navigate the app', () => {
     cy.get('#CV').should('not.exist')
   })
 
-  it('to My Projects tab',() => {
+  it('to My Projects tab', () => {
     cy.get('#projects-tab').click();
 
     cy.get('#projects-header').should('contain', 'My Projects');
@@ -25,7 +25,7 @@ describe('User can navigate the app', () => {
 
   })
 
-  it('back to My Portfolio/Hello tab',() => {
+  it('back to My Portfolio/Hello tab', () => {
     cy.get('#about-tab').click();
     cy.get('#header').click();
     cy.get('#CV').click();
@@ -36,24 +36,18 @@ describe('User can navigate the app', () => {
     cy.get('#about-header').should('not.exist');
     cy.get('#CV').should('not.exist')
 
-    it('to my CV tab',() => {
+    it('to my CV tab', () => {
       cy.get('#CV').click();
       cy.get('#header').click()
       cy.get('#hello').click();
-  
+
       cy.get('#CV').should('contain', 'CV');
-  
+
       cy.get('#projects-header').should('not.exist');
       cy.get('#about-header').should('not.exist');
       cy.get('#hello').should('not.exist');
 
 
-
-
-
-
-
-
-
-  })
-})
+    })
+  });
+});
